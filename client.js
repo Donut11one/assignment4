@@ -35,21 +35,19 @@ async function getListJsonCar() {
       str += "<tr>";
       str += "<td>" + listcar[i].name + "</td>";
     }
-    str += "</car>";
+    str += "</tr></car>";
     document.getElementById("info-json").innerHTML = str;
  // }
 }
 
 async function getTable() {
-  const data = await ajaxGET("http://localhost:8000/table?format=html");
+  const data = await ajaxGET("http://localhost:8000/public/car.html");
   // console.log(data);
   document.getElementById("car").innerHTML = data;
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    
-
-    document.getElementById("show-car").addEventListener("click", function (e) {
+    document.getElementById("show-table").addEventListener("click", function (e) {
       getTable();
     });
 });
@@ -63,7 +61,7 @@ getListCar();
 
 //AJAX call to the server, where the server sends a snippet of HTML
 async function getListCar() {
-  const data = await ajaxGET("http://localhost:8000/food?format=html");
+  const data = await ajaxGET("http://localhost:8000/car.html");
   //   console.log(data);
   document.getElementById("list-car").innerHTML = data;
 }

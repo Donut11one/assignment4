@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Velocity Voyage</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="img\favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav id="container">
+      <aside class="grid-item sidebar">
+        <div id="icon1">
+          <div id="circle">
+            <div id="circle-words">
+              <header class="fontds">Velocity<br />Voyage</header>
+            </div>
+          </div>
+        </div>
+
+        <section class="links">
+          <div class="side-block" id="home">
+            <img src="/img/home-button.png" class="icon" alt="Home" />
+            <h4>Home</h4>
+          </div>
+          <div class="side-block" id="blog">
+            <img src="/img/blog.png" class="icon" alt="" />
+            <h4>Blog</h4>
+          </div>
+          <div class="side-block" id="contribute">
+            <img src="/img/contribute.png" class="icon" alt="" />
+            <h4>Contribute</h4>
+          </div>
+          <div class="side-block" id="about">
+            <img src="/img/about.png" class="icon" alt="About" />
+            <h4>About</h4>
+          </div>
+        </section>
+      </aside>
+
+      <nav class="grid-item main">
+        <figure>
+          <img src="img/GTR.jpg" class="main-img" alt="main image" />
+          <figcaption class="fontds" id="figure1">
+            Velocity Voyage: The best SUVs out there
+          </figcaption>
+        </figure>
+
+        <div class="description">
+          <p class="sign-up">
+            Subscribe to our newsletter for a weekly roundup of top car
+            stories, reviews, and news straight to your inbox.
+          </p>
+          <img src="img/mail-icon.png" class="mail-icon" alt="" />
+          <input
+            type="email"
+            id="email"
+            class="input"
+            autocomplete="off"
+            required
+            placeholder="Email"
+          />
+          <input type="submit" value="Subcribe" class="subcribe"/>
+        </div>
+      </nav>
+      <div id="list-car"></div>
+
+      
+      <button id="show-table" >Show list</button>
+      <div id="car"></div>
+      <button id="hide-table" >Hide list</button>
+      
+      <div id="info-json"></div>
+      <!-- <footer>
+        <p class="copyright">@2024 Copy Right <br />Maxim Ratushny</p>
+        <img src="img/social.png" class="img-footer" alt="social" />
+      </footer> -->
+    </nav>
+    <script src="/js/client.js"></script>
+  </body>
+</html>
